@@ -3,7 +3,7 @@
 
 set -e
 
-REPO="XternA/income-generator"
+REPO="nxyystore/income-generator"
 REPO_URL="https://github.com/${REPO}.git"
 BIN_NAME="igm"
 IGM_HOME="${HOME}/.igm"
