@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set REPO=XternA/income-generator
+set REPO=nxyystore/income-generator
 set INSTALLER_URL=https://raw.githubusercontent.com/%REPO%/installer
 set IGM_DIR=%APPDATA%\IGM
 set WSL_GUIDE=https://github.com/%REPO%/wiki/Windows-Guide
