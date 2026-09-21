@@ -217,7 +217,7 @@ services:
             - project=standard
             - com.centurylinklabs.watchtower.scope=igm
         command: >
-            ${PROXYBASE_USER_ID:-}
+            ${PROXYBASE_ACCESS_TOKEN:-}
             ${DEVICE_ID:-}
         profiles:
             - ${PROXYBASE:-DISABLED}

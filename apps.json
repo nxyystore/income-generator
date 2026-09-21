@@ -224,9 +224,9 @@
     {
         "name": "PROXYBASE",
         "url": "https://tinyurl.com/3z9sas27",
-        "description": " Log into dashboard to obtain account access token.",
+        "description": "Log into dashboard to obtain account access token.",
         "properties": [
-            "PROXYBASE_USER_ID"
+            "PROXYBASE_ACCESS_TOKEN"
         ],
         "is_enabled": true
     },

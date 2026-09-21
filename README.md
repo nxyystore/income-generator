@@ -6,10 +6,10 @@
 
 <div align="center">
 
-[![GitHub Release Date](https://img.shields.io/github/release-date/XternA/income-generator?style=&label=Latest%20Release)](https://github.com/XternA/income-generator/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date/nxyystore/income-generator?style=&label=Latest%20Release)](https://github.com/XternA/income-generator/releases)
 [![Static Badge](https://img.shields.io/badge/License-purple?style=flat&logo=github)](https://github.com/XternA/income-generator?tab=License-1-ov-file)
-[![GitHub Release](https://img.shields.io/github/v/release/XternA/income-generator?sort=date&display_name=release&style=flat&label=Version)](https://github.com/XternA/income-generator/releases/latest)
-[![GitHub Repo stars](https://img.shields.io/github/stars/XternA/income-generator?style=flat&logo=github&label=Stars&color=orange)](https://github.com/XternA/income-generator)
+[![GitHub Release](https://img.shields.io/github/v/release/nxyystore/income-generator?sort=date&display_name=release&style=flat&label=Version)](https://github.com/XternA/income-generator/releases/latest)
+[![GitHub Repo stars](https://img.shields.io/github/stars/nxyystore/income-generator?style=flat&logo=github&label=Stars&color=orange)](https://github.com/XternA/income-generator)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat&logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=32DCQ65QM5FNE)
 
 If you like this project, don't forget to leave a star. ⭐
@@ -46,7 +46,7 @@ Manage everything from the command line, TUI, or via the built-in web dashboard.
 
 Run the following installer in your terminal.
 ```sh
-curl -fsSL https://raw.githubusercontent.com/XternA/income-generator/installer/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/nxyystore/income-generator/installer/install.sh | sh
 ```
 
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
@@ -54,7 +54,7 @@ curl -fsSL https://raw.githubusercontent.com/XternA/income-generator/installer/i
 Run the following installer in Windows Terminal (Command Prompt), outside of WSL.
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/XternA/income-generator/installer/install.cmd -o install.cmd && install.cmd && del install.cmd
+curl -fsSL https://raw.githubusercontent.com/nxyystore/income-generator/installer/install.cmd -o install.cmd && install.cmd && del install.cmd
 ```
 
 > IGM leverages WSL natively. Refer to the [**Windows guide**](../../wiki/Windows-Guide) to setup WSL on Windows.
@@ -136,15 +136,6 @@ Your efforts and interest are well appreciated if you would like to contribute a
 
 Even if you do not wish to contribute, you can still show your support by giving this project a star ⭐ or sharing it with others.
 
-### Donations 💸
-- **Bitcoin (BTC)** - `bc1qq993w3mxsf5aph5c362wjv3zaegk37tcvw7rl4`
-- **Ethereum (ETH)** - `0x2601B9940F9594810DEDC44015491f0f9D6Dd1cA`
-- **Solana (SOL)** - `Ap5aiAbnsLtR2XVJB3sp37qdNP5VfqydAgUThvdEiL5i`
-- **Binance Smart Chain (BSC)** - `0x2601B9940F9594810DEDC44015491f0f9D6Dd1cA`
-- **PayPal** - [@xterna](https://paypal.me/xterna)
-
-Donations are warmly welcomed, no matter the amount, your support is gratefully appreciated. Additionally, it helps fuel future developments and maintenance. Thank you. 🙏🏻
-
 ## Disclaimer ⚠️
 Before using the applications provided in this stack, it is essential to verify that your actions comply with the laws of your jurisdiction and adhere to the terms outlined in your internet service provider's contract. The integration of these applications within this stack is purely for user convenience and does not signify an endorsement of their utilization.
 
@@ -155,4 +146,4 @@ The author does not provide any assurances, whether explicit or implicit, regard
 By choosing to utilize this tool, you acknowledge and assume all risks associated with its use. Additionally, you agree that the author cannot be held liable for any issues or consequences that may arise as a result of its usage.
 
 ## Stargazers ⭐️
-[![Stargazers over time](https://starchart.cc/XternA/income-generator.svg?variant=adaptive)](https://starchart.cc/XternA/income-generator)
+[![Stargazers over time](https://starchart.cc/nxyystore/income-generator.svg?variant=adaptive)](https://starchart.cc/nxyystore/income-generator)
