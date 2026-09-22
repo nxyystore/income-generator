@@ -143,7 +143,7 @@ run_updater() {
 }
 
 manage_tool() {
-    options="(1-6)"
+    options="(1-7)"
 
     while true; do
         display_banner
@@ -153,6 +153,7 @@ manage_tool() {
         echo "4. Reset all back to default"
         echo "5. Check and get update"
         echo "6. Change editor tool"
+        echo "7. Uninstall IGM"
         echo "0. Return to Main Menu"
         printf "\nSelect an option $options: "; read -r option
 
@@ -246,6 +247,10 @@ manage_tool() {
             6)
                 display_banner
                 set_editor
+                ;;
+            7)
+                sh scripts/self-uninstall.sh
+                printf "\nPress Enter to continue..."; read -r _
                 ;;
             0)
                 break  # Return to the main menu
@@ -421,11 +426,31 @@ case "$1" in
         clear_screen
         ;;
     uninstall)
-        if [ -n "$2" ]; then
-            $APP_SELECTION --import
-            uninstall_app_noninteractive "$2"
-        fi
-        clear_screen
+        case "$2" in
+            --self|self)
+                shift 2
+                sh scripts/self-uninstall.sh "$@"
+                clear_screen
+                ;;
+            "")
+                remove_applications
+                clear_screen
+                ;;
+            *)
+                $APP_SELECTION --import
+                uninstall_app_noninteractive "$2"
+                clear_screen
+                ;;
+        esac
+        ;;
+    self-uninstall|purge)
+        sh scripts/self-uninstall.sh "$@"
+        # self-uninstall removes the repo; no need to clear_screen if it was deleted
+        if [ -d "$ROOT_DIR" ]; then clear_screen; fi
+        ;;
+    uninstall-self)
+        sh scripts/self-uninstall.sh "$@"
+        if [ -d "$ROOT_DIR" ]; then clear_screen; fi
         ;;
     redeploy)
         $APP_SELECTION --import

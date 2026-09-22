@@ -78,6 +78,39 @@ igm web start --auto
 
 Open http://localhost:4747 (or LAN IP) in the browser to see the dashboard, configure, deploy and manage.
 
+### Uninstall
+
+Remove IGM completely (containers, binary at `~/.local/bin/igm`, repo at `~/.igm`, and shell PATH entries). Your config files and data volumes are removed with the containers — back up first if needed (`igm` → Manage Tool → Backup & restore).
+
+![macOS](https://img.shields.io/badge/MacOS-444444?style=for-the-badge&logo=apple&logoColor=white)![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+Pick one — from inside IGM, or via curl (works even if `igm` is broken):
+
+```sh
+# Inside IGM
+igm self-uninstall
+# aliases: igm uninstall --self | igm purge
+
+# One-liner (no local checkout needed)
+curl -fsSL https://raw.githubusercontent.com/nxyystore/income-generator/installer/uninstall.sh | sh
+# non-interactive
+curl -fsSL https://raw.githubusercontent.com/nxyystore/income-generator/installer/uninstall.sh | sh -s -- --yes
+```
+
+Options: `--keep-containers` (leave deployed apps running), `--keep-binary`, `--keep-repo`, `-y/--yes` (skip confirmation).
+
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+
+Run in Windows Terminal (Command Prompt), outside WSL:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/nxyystore/income-generator/installer/uninstall.cmd -o uninstall.cmd && uninstall.cmd && del uninstall.cmd
+# non-interactive
+curl -fsSL https://raw.githubusercontent.com/nxyystore/income-generator/installer/uninstall.cmd -o uninstall.cmd && uninstall.cmd --yes && del uninstall.cmd
+```
+
+`uninstall.cmd` cleans `%APPDATA%\IGM`, the User PATH entry, and then calls `uninstall.sh` inside WSL to remove the WSL side. Restart your terminal after uninstalling.
+
 ## Supported Applications 📋
 
 The following table provides IGM support and the install specification for each application.

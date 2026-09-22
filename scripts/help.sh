@@ -32,7 +32,9 @@ Usage: igm ${RED}|${NC} igm [option] ${RED}|${NC} igm [option] [arg]
   igm show            [app|proxy|group]          Show all details for the selected application.
   igm deploy                                     Launch the install manager for deploying applications.
   igm redeploy                                   Redeploy the last installed application state.
-  igm install                                    Install single or multiple applications.
+  igm install         [name]                     Install single or multiple applications.
+  igm uninstall       [name|--self]              Remove an app, or pass --self to uninstall IGM itself.
+  igm self-uninstall  [-y] [--keep-containers]   Uninstall IGM (alias: igm uninstall --self, igm purge).
   igm clean           [all]                      Cleanup orphaned applications, volumes. (all: include orphaned images).
 
 [${BLUE}Proxy${NC}]
